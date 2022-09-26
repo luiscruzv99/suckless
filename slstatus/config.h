@@ -1,10 +1,10 @@
 /* See LICENSE file for copyright and license details. */
 
 /* interval between updates (in ms) */
-const unsigned int interval = 30000;
+const unsigned int interval = 60000;
 
 /* text to show if no value can be retrieved */
-static const char unknown_str[] = " ";
+static const char unknown_str[] = "-";
 
 /* maximum output string length */
 #define MAXLEN 2048
@@ -65,9 +65,14 @@ static const char unknown_str[] = " ";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ disk_perc, "  %s%% ",    "/" },
-	{ separator,"|",            NULL }, 
+	{ disk_perc, "  %s%% ",    "/" },
+	{ separator, "|",           NULL },
+	{ battery_perc, "   %s%% ","BAT1" },
+	{ battery_remaining, "[%s] ","BAT1" },
+	{ separator,"|",            NULL },
+	{ wifi_perc, "  %s%%",     "wlan0"},
+	{ separator, "|",           NULL},
 	{ ram_perc, "  %s%% ",     NULL },
 	{ separator,"|",            NULL }, 
-	{ datetime, "  %s ",         "%H:%M" },
+	{ datetime, "  %s ",       "%H:%M" },
 };

@@ -7,8 +7,8 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int user_bh            = 5;        /* 2 is the default spacing around the bar's font */
-static const char *fonts[]          = { "SauceCodePro:size=10", "Font Awesome 6 Brands:size=10", "Font Awesome 6 Free:size=10"};
-static const char dmenufont[]       = "SauceCodePro:size=10";
+static const char *fonts[]          = { "SauceCodePro:size=15", "Font Awesome 6 Brands:size=19", "Font Awesome 6 Free:size=19"};
+static const char dmenufont[]       = "SauceCodePro:size=15";
 static const char col_bg[]          = "#232634";
 static const char col_fg[]          = "#c6d0f5";
 static const char col_selbg[]       = "#bbbbbb";
